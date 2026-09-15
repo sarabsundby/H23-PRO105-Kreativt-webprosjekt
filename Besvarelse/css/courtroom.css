@@ -1,0 +1,488 @@
+/* Magnus har kodet dette */
+
+body {
+  background-color: rgb(44, 33, 18);
+}
+
+a {
+  cursor: pointer;
+}
+
+.text {
+  position: absolute;
+  top: 30px;
+  left: 200px;
+  width: auto;
+  height: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4%;
+  font-family: sans-serif;
+}
+
+.scene {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: rgb(255, 4, 0);
+  width: 1000px;
+  height: 600px;
+  transform: translate(-50%, -50%);
+}
+
+.courtroom {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.pocket {
+  position: absolute;
+  top: 370px;
+  left: 839px;
+  width: 55px;
+}
+
+.gavelHitImg {
+  position: absolute;
+  top: 247px;
+  left: 600px;
+  width: 50px;
+  opacity: 1;
+}
+
+/*Step one*/
+#actionOne:target #actionOneJudge,
+#actionTwo:target #actionOneJudge,
+#actionThree:target #actionOneJudge {
+  opacity: 0;
+}
+
+.parkingTicketsImg {
+  position: absolute;
+  top: 440px;
+  left: 300px;
+}
+
+.parkingTickets #parkingTicketsJudge {
+  opacity: 0;
+}
+
+.parkingTickets:hover #parkingTicketsJudge {
+  opacity: 1;
+  z-index: 2;
+}
+
+#actionOne .paperstack .paperstackImg {
+  position: absolute;
+  top: 450px;
+  left: 600px;
+  width: 100px;
+  transform: rotateY(180deg);
+  opacity: 1;
+}
+
+#actionOne .paperstack .paper {
+  position: absolute;
+  top: 450px;
+  left: 600px;
+  width: 100px;
+  opacity: 0;
+}
+
+#actionOne:hover .paperstack:hover #paperOne {
+  opacity: 1;
+  animation: paperOne 4s ease-out forwards;
+}
+
+@keyframes paperOne {
+  from {
+    top: 450px;
+    left: 600px;
+  }
+  20% {
+    top: 350px;
+    left: 550px;
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(20deg);
+  }
+  70% {
+    transform: rotate(-20deg);
+  }
+  to {
+    top: 540px;
+    left: 450px;
+  }
+}
+
+#actionOne:hover .paperstack:hover #paperTwo {
+  opacity: 1;
+  animation: paperTwo 4s ease-out forwards;
+}
+
+@keyframes paperTwo {
+  from {
+    top: 450px;
+    left: 600px;
+  }
+  20% {
+    top: 350px;
+    left: 600px;
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(20deg);
+  }
+  70% {
+    transform: rotate(-20deg);
+  }
+  to {
+    top: 574px;
+    left: 600px;
+  }
+}
+
+#actionOne:hover .paperstack:hover #paperThree {
+  opacity: 1;
+  animation: paperThree 4s ease-out forwards;
+}
+
+@keyframes paperThree {
+  from {
+    top: 450px;
+    left: 600px;
+  }
+  20% {
+    top: 350px;
+    left: 650px;
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(20deg);
+  }
+  70% {
+    transform: rotate(-20deg);
+  }
+  to {
+    top: 560px;
+    left: 750px;
+  }
+}
+
+/*Step two*/
+#actionTwo #actionTwoJudge {
+  opacity: 0;
+}
+
+#actionOne:target #actionTwoJudge {
+  opacity: 1;
+}
+
+#actionOne:target .documentImg {
+  opacity: 1;
+}
+
+#actionTwo .documentImg {
+  position: absolute;
+  top: 240px;
+  left: 690px;
+  transform: rotate(-10deg);
+  width: 100px;
+  opacity: 0;
+}
+
+#actionTwo .teardrop {
+  position: absolute;
+  width: 10px;
+  opacity: 0;
+}
+
+#actionOne:target #actionTwo:hover .document:hover #tearOne {
+  top: 159px;
+  left: 175px;
+  animation: tearOne 4s ease-in infinite;
+}
+
+@keyframes tearOne {
+  from {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  to {
+    top: 600px;
+    left: 175px;
+  }
+}
+
+#actionOne:target #actionTwo:hover .document:hover #tearTwo {
+  top: 159px;
+  left: 175px;
+  animation: tearTwo 4s ease-in 1s infinite;
+}
+
+@keyframes tearTwo {
+  from {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  to {
+    top: 600px;
+    left: 175px;
+  }
+}
+
+#actionOne:target #actionTwo:hover .document:hover #tearThree {
+  top: 159px;
+  left: 175px;
+  animation: tearThree 4s ease-in 2s infinite;
+}
+
+@keyframes tearThree {
+  from {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  to {
+    top: 600px;
+    left: 175px;
+  }
+}
+
+#actionOne:target #actionTwo:hover .document:hover #tearFour {
+  top: 159px;
+  left: 175px;
+  animation: tearFour 4s ease-in 3s infinite;
+}
+
+@keyframes tearFour {
+  from {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  to {
+    top: 600px;
+    left: 175px;
+  }
+}
+
+#actionOne:target .ringImg {
+  opacity: 1;
+}
+
+#actionTwo .ringImg {
+  position: absolute;
+  top: 210px;
+  left: 220px;
+  width: 100px;
+  opacity: 0;
+}
+
+#actionTwo:hover .ring:hover .ringImg {
+  animation: ring 4s ease-in-out infinite;
+}
+
+@keyframes ring {
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+#actionOne:target #actionTwo:hover .ring:hover .flashImg {
+  position: absolute;
+  top: 210px;
+  left: 250px;
+  width: 30px;
+  animation: flash 4s ease-out infinite;
+}
+
+@keyframes flash {
+  from {
+  }
+  25% {
+    width: 25px;
+    opacity: 1;
+  }
+  26% {
+    opacity: 0;
+  }
+  74% {
+    opacity: 0;
+  }
+  75% {
+    width: 25px;
+    opacity: 1;
+  }
+  to {
+    width: 30px;
+  }
+}
+
+/*Step three*/
+#actionThree #actionThreeJudge {
+  opacity: 0;
+}
+
+#actionTwo:target #actionThreeJudge {
+  opacity: 1;
+}
+
+#actionTwo:target .walletImg {
+  opacity: 1;
+}
+
+#actionThree .walletImg {
+  position: absolute;
+  top: 350px;
+  left: 845px;
+  width: 40px;
+  opacity: 0;
+  transform: rotate(-90deg);
+}
+
+#actionThree:hover .wallet:hover .walletImg {
+  animation: wallet 1s linear forwards;
+}
+
+@keyframes wallet {
+  to {
+    top: 315px;
+    width: 50px;
+    transform: rotate(0deg);
+  }
+}
+
+#actionTwo:target #actionThree:hover .wallet:hover #dollarEyeOne {
+  position: absolute;
+  top: 85px;
+  left: 475px;
+  width: 15px;
+}
+
+#actionTwo:target #actionThree:hover .wallet:hover #dollarEyeTwo {
+  position: absolute;
+  top: 85px;
+  left: 495px;
+  width: 15px;
+}
+
+#actionTwo:target .pokerchipsImg {
+  opacity: 1;
+}
+
+#actionThree .pokerchipsImg {
+  position: absolute;
+  top: 255px;
+  left: 620px;
+  width: 70px;
+  opacity: 0;
+}
+
+/*Step four*/
+#actionThree .pokerchips #pokerJudge {
+  opacity: 0;
+}
+
+#actionTwo:target #actionThree:hover .pokerchips:hover #pokerJudge {
+  opacity: 1;
+}
+
+#actionThree:target .gavelImg {
+  opacity: 1;
+}
+
+#actionFour .gavelImg {
+  position: absolute;
+  top: 180px;
+  left: 545px;
+  width: 100px;
+  transform: rotateY(180deg) rotateZ(-30deg);
+  opacity: 0;
+}
+
+#actionFour:hover .gavelImg {
+  animation: gavel 0.3s ease-in infinite forwards;
+}
+
+@keyframes gavel {
+  from {
+    transform: rotateY(180deg) rotateZ(-30deg);
+  }
+  50% {
+    transform: rotateY(180deg) rotateZ(50deg);
+  }
+  to {
+    transform: rotateY(180deg) rotateZ(-30deg);
+  }
+}
+
+#actionFour #actionFourJudge {
+  opacity: 0;
+}
+
+#actionThree:target #actionFourJudge {
+  opacity: 1;
+}
+
+#actionFour .gavelHitActionImg {
+  position: absolute;
+  top: 215px;
+  left: 590px;
+  width: 70px;
+  opacity: 0;
+}
+
+#actionThree:target #actionFour:hover .gavel:hover .gavelHitActionImg {
+  animation: gavelHitAction 0.3s ease-in infinite forwards;
+}
+
+@keyframes gavelHitAction {
+  from {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.switchImg {
+  position: absolute;
+  top: 195px;
+  left: 700px;
+  width: 30px;
+  z-index: 2;
+}
+
+#lightOff {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: none;
+}
+
+#switchOnOff {
+  display: none;
+}
+
+#switchOnOff:checked ~ #lightOff {
+  display: block;
+  opacity: 0.8;
+}

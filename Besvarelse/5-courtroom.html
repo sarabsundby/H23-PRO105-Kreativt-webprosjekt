@@ -1,0 +1,100 @@
+
+
+<!-- Magnus har kodet dette -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courtroom</title>
+    <link rel="stylesheet" href="css/courtroom.css" />
+  </head>
+  <body>
+    <div class="scene" id="action">
+      <img class="courtroom" src="Images/courtroom2.jpg" alt="courtroom" />
+      <!--Step one-->
+      <div id="actionOne">
+        <div class="paperstack">
+          <a href="#actionOne">
+            <img class="paperstackImg" src="Images/paperStack.png" alt="paperStack" />
+          </a>
+          <img class="paper" id="paperThree" src="Images/paper1.png" alt="paper" />
+          <img class="paper" id="paperTwo" src="Images/paper1.png" alt="paper" />
+          <img class="paper" id="paperOne" src="Images/paper1.png" alt="paper" />
+        </div>
+        <div class="parkingTickets">
+          <img class="parkingTicketsImg" src="Images/paperStack2.png" alt="Parking tickets" />
+          <div class="text" id="parkingTicketsJudge">
+            <p class="parkingTicketsJudgeTxt">I don't want your parking tickets!</p>
+          </div>
+        </div>
+        <!--Step two-->
+        <div id="actionTwo">
+          <div class="text" id="actionTwoJudge">
+            <p class="actionTwoTxt">It's your choice to make</p>
+          </div>
+          <div class="document">
+            <a href="#actionTwo">
+              <img class="documentImg" src="Images/document.png" alt="Dokument" />
+            </a>
+            <img class="teardrop" id="tearOne" src="Images/teardrop.png" alt="Teardrop" />
+            <img class="teardrop" id="tearTwo" src="Images/teardrop.png" alt="Teardrop" />
+            <img class="teardrop" id="tearThree" src="Images/teardrop.png" alt="Teardrop" />
+            <img class="teardrop" id="tearFour" src="Images/teardrop.png" alt="Teardrop" />
+          </div>
+          <div class="ring">
+            <a href="2-chapel.html">
+              <img class="ringImg" src="Images/ring.png" alt="Ring" />
+            </a>
+            <img class="flashImg" src="Images/flash.png" alt="flash" />
+          </div>
+          <!--Step three-->
+          <div id="actionThree">
+            <div class="text" id="actionThreeJudge">
+              <p class="actionThreeTxt">You need to pay</p>
+            </div>
+            <div class="wallet">
+              <a href="#actionThree">
+                <img class="walletImg" src="Images/wallet.png" alt="" />
+              </a>
+              <img class="dollarEyesImg" id="dollarEyeOne" src="Images/dollarEye.png" alt="Dollar eyes" />
+              <img class="dollarEyesImg" id="dollarEyeTwo" src="Images/dollarEye.png" alt="Dollar eyes" />
+            </div>
+            <div class="pokerchips">
+              <a href="4-casino.html"><img class="pokerchipsImg" src="Images/pokerchips.png" alt="Pokerchips" /></a>
+              <div class="text" id="pokerJudge">
+                <p class="pokerJudgeTxt">THIS IS NOT A CASINO!!!</p>
+                <p class="pokerJudgeTxt">GET THAT OUT OF HERE!!!</p>
+              </div>
+            </div>
+            <!--Step four-->
+            <div id="actionFour">
+              <div class="text" id="actionOneJudge">
+                <p class="actionOneTxt">I need some documents</p>
+              </div>
+              <div class="text" id="actionFourJudge">
+                <p class="actionFourTxt">Let's make it official</p>
+                <p class="actionFourTxt">Bang the gavel!</p>
+              </div>
+              <div class="gavel">
+                <img class="gavelHitActionImg" src="Images/gavelHitAction.png" alt="GavelHitAction" />
+
+                <a href="6-hotel-room.html"><img class="gavelImg" src="Images/gavel.png" alt="Gavel" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Extra stuff -->
+      </div>
+      <img class="pocket" src="Images/pocket.png" alt="pocket" />
+      <img class="gavelHitImg" src="Images/gavelHit.png" alt="GavelBase" />
+      <div id="lightSwitch">
+        <label class="switch" for="switchOnOff"><img class="switchImg" src="Images/lightSwitch.png" alt="Switch" /></label>
+        <input type="checkbox" id="switchOnOff" />
+        <div id="lightOff" class=""></div>
+      </div>
+    </div>
+  </body>
+</html>
