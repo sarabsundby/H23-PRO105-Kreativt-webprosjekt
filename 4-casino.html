@@ -1,0 +1,109 @@
+
+
+<!-- Marthe har kodet dette -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THE CASINO</title>
+    <link rel="stylesheet" href="css/casino.css" />
+  </head>
+  <body>
+    <!-- Boks som inneholder alle elementer -->
+    <div class="box">
+      <!-- Boks som kommer frem når man åpner nettsiden
+        - Koden er inspirert av Apti sin velkomstboks
+        - Bruker <strong> for å gjøre ett ord synligere -->
+      <div class="welcome">
+        <h3>You got married last night!</h3>
+        <h4>now you must face a choice:</h4>
+        <p>
+          continue playing poker, or make your way to the divorce court. The
+          <strong>cards</strong> are in your hands, both at the table and in
+          matters of the heart.
+        </p>
+      </div>
+
+      <!-- Gulvteppet -->
+      <div class="carpet"></div>
+
+      <!-- Bilde av en spillmaskin  -->
+      <div class="slotMachineContainer">
+        <div class="slotMachine">
+          <img src="Images/slot.png" alt="Slot Machine" />
+        </div>
+      </div>
+
+      <!-- Her er HTML for døren og dørhåndtaket
+            - Jeg har lagt inn kobling videre til Magnus sin side -->
+      <div class="doorContainer">
+        <a href="5-courtroom.html">
+          <div class="door">
+            <div class="gavel">
+              <img src="Images/gavel.png" alt="Gavel" />
+            </div>
+            <div class="doorHandle"></div>
+          </div>
+        </a>
+      </div>
+
+      <!-- HTML for bildet av Elvis Presley -->
+      <div class="elvisContainer">
+        <img src="Images/elvis.png" alt="Elvis Presley" />
+      </div>
+
+      <!-- Her kommer HTML koden for skiltene på veggen (fire kort som lyser). 
+            - Her fant jeg HTML entiteten for de fire symbolene i en kortstokk, 
+            og plasserte de i en <span> tag. -->
+      <div class="cardSignContainer">
+        <div class="sign">
+          <span class="cardSymbolRed">&#9829;</span>
+          <span class="ace">A</span>
+        </div>
+        <div class="sign">
+          <span class="cardSymbol">&#9827;</span>
+          <span class="ace">A</span>
+        </div>
+        <div class="sign">
+          <span class="cardSymbolRed">&#9830;</span>
+          <span class="ace">A</span>
+        </div>
+        <div class="sign">
+          <span class="cardSymbol">&#9824;</span>
+          <span class="ace">A</span>
+        </div>
+      </div>
+
+      <!-- Her er html koden for pokerbordet -->
+      <div class="pokerTableContainer">
+        <div class="pokerTable">
+          <img src="Images/pokerTable.webp" alt="Poker table" />
+        </div>
+      </div>
+
+      <!-- Her har jeg lagd en container som inneholder
+        HTML foe pokerchippene og pokerkortene.
+        - Jeg har i tillegg linket pokerkortene opp mot Apti sin nettside. -->
+      <div class="pokerContainer">
+        <div class="chip redChip">1</div>
+        <div class="chip blueChip">5</div>
+        <div class="chip greenChip">10</div>
+        <div class="chip blackChip">25</div>
+
+        <a href="3-janitors-closet.html">
+          <div class="pokerCard CardOne">
+            <span class="symbolSpan">&#9829;</span>
+            <span class="signSpan">A</span>
+          </div>
+          <div class="pokerCard CardTwo">
+            <span class="symbolSpan">&#9829;</span>
+            <span class="signSpan">A</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

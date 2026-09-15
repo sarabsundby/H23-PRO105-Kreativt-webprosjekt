@@ -1,0 +1,142 @@
+
+
+/* Sara har kodet dette */
+
+
+/* Bakgrunnen til nettsiden */
+body {
+  background-image: url(/Images/hotel-room.png);
+  background-color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: 82%;
+  background-position: center;
+  position: relative;
+}
+
+p {
+  position: absolute;
+  color: rgb(103, 29, 29);
+  top: -3%;
+  left: 10%;
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+  background-color: transparent;
+  padding: 3px;
+}
+
+/* Styling av containeren */
+.bibleContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling av det animerte bilde av en bibel */
+#bible {
+  width: 11%;
+  margin-top: 40%;
+  position: relative;
+  transform: rotate(-5deg);
+}
+
+/* Styling av det animerte bilde av Papa Emeritus */
+#papa {
+  position: absolute;
+  width: 3%;
+  margin-top: 29.7%;
+  left: 48%;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+/* Animasjonen som får bilde av Papa Emeritus til å dukke opp bak bibelen */
+.bibleContainer #papa {
+  animation-delay: 4s;
+  animation-name: ascending;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+@keyframes ascending {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(30%);
+  }
+}
+
+/* Styling av det animerte bilde av den grønne baggen */
+#bag {
+  position: absolute;
+  width: 17%;
+  left: 20%;
+  top: 78%;
+}
+
+/* Styling av det animerte bilde av en flybillett og animasjonen som får den til å fly ned i baggen */
+#ticket {
+  position: absolute;
+  transform: rotate(-20deg);
+  width: 5%;
+  left: 25.3%;
+  top: 81.5%;
+  animation-name: ticket-spinning;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+}
+
+@keyframes ticket-spinning {
+  0% {
+    top: -10%;
+    left: 10%;
+    transform: rotateZ(25deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+/* Styling av den skjulte knappen som tar deg til side 7 */
+#btnForward {
+  position: absolute;
+  left: 27%;
+  top: 84%;
+  opacity: 0;
+  font-size: large;
+  text-decoration: none;
+}
+
+/* Styling av den skjulte knappen som tar deg tilbake til side 4 */
+#btnBackward {
+  position: absolute;
+  width: 5%;
+  height: 5%;
+  left: 48%;
+  text-decoration: none;
+  opacity: 0;
+}
+
+/* Styling av det animerte bilde av Elvis Presley, og animasjonen som får den til å gløde */
+#elvis {
+  position: absolute;
+  width: 2%;
+  top: 49%;
+  left: 48%;
+  display: block;
+  border-radius: 50%;
+  animation-name: animatedElvis;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animatedElvis {
+  50% {
+    box-shadow: 0px 0px 50px rgb(0, 0, 0);
+    opacity: 1;
+    background-color: rgb(255, 255, 0);
+  }
+}

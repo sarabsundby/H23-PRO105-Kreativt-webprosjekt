@@ -1,0 +1,86 @@
+
+
+/* Mathias har kodet dette */
+
+
+body  {
+    background-image: url(/Images/consertt.jpg);
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+}
+
+#Elvis {
+    height: 65%;
+    left: -1%;
+    position: absolute;
+    bottom: -8%;
+}
+
+
+#TextBubble {
+    position: absolute;
+    left: 60%;
+    top: 1%;
+    z-index: 0;
+}
+
+#Elvis {
+    height: 70%;
+    left: -2%;
+    position: absolute;
+    bottom: -10%;
+    cursor: pointer;
+}
+
+#Elvis a {
+    display: block;
+}
+
+#FactText  {
+    position: absolute;
+    left: 10%;
+    top: 8%;
+    font-size: 120%;
+    z-index: 1;
+}
+
+.txt {
+    width: 900px;
+    height: 200px;
+}
+
+.ElvisAnimation img#TextBubble, .ElvisAnimation #FactText {
+    display: none;
+}
+
+.ElvisAnimation:hover img#TextBubble, .ElvisAnimation:hover #FactText {
+    display: block;
+}
+
+audio {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+#krone {
+    position: absolute;
+    left: 48%;
+    top: -10%;
+    animation-name: dropCrown;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-play-state: initial;
+    animation-fill-mode: forwards;
+}
+
+@keyframes dropCrown {
+    from{
+        top: 0%
+    }
+    to {top: 74%;}
+}
